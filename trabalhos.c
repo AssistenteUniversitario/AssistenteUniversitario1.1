@@ -264,7 +264,7 @@ ListaTrabalhos *carregaTrabalho (ListaMaterias *materia, char *nome, int numPeri
     for (i = cont; i >= 1; i--)
     {
         aux = NULL;
-        sprintf(buffer2, "%s.%d.%dTr%d", nome, numPeriodo, materia->numero, i);
+        sprintf(buffer2, "%s.%d.%dTr.%d", nome, numPeriodo, materia->numero, i);
         arquivo = fopen(buffer2, "rb");
         if (arquivo != NULL)
         {
